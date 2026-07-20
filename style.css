@@ -89,7 +89,16 @@ body {
 }
 
 .navbar a:hover, .navbar a.active {
+    color: #ffffff;
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
     color: #fff;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 /* Hero Section */
@@ -337,20 +346,40 @@ body {
 
 @media (max-width: 768px) {
     .main-header {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
     }
     
     .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.8rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(5, 11, 20, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    
+    .navbar.active {
+        display: flex;
     }
     
     .navbar a {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
     }
     
     .hero-title, .about-title, .section-title {

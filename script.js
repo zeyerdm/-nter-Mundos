@@ -16,4 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.background = `rgba(15, 23, 42, 0.4)`;
         });
     });
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navbar = document.querySelector('.navbar');
+    
+    if (mobileBtn && navbar) {
+        mobileBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            const icon = mobileBtn.querySelector('i');
+            if (navbar.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
 });
