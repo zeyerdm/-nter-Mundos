@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnter Mundos - İletişim</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-top: 2rem;
+            animation: fadeUp 1.2s ease forwards;
+        }
+
+        .contact-info-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-form-container {
+            background: rgba(9, 9, 11, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 3rem;
+            backdrop-filter: blur(12px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 0.8rem 1rem;
+            color: #fff;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #0ea5e9;
+            background: rgba(14, 165, 233, 0.05);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium subtle background -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Modern Header -->
+    <header class="main-header">
+        <div class="logo">
+            <i class="fa-solid fa-globe"></i> İnter Mundos
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="services.html">Hizmetlerimiz</a>
+            <a href="team.html">Ekibimiz</a>
+            <a href="contact.html" class="active">İletişim</a>
+        </nav>
+    </header>
+
+    <main class="about-container" style="gap: 2rem;">
+        <section class="about-hero">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> İletişim
+            </div>
+            <h1 class="section-title" style="font-size: 3.5rem; margin-bottom: 1rem;">Bizimle <span class="text-highlight">İletişime Geçin.</span></h1>
+            <p class="approach-intro" style="font-size: 1.125rem; margin-bottom: 0;">
+                Hızlı ve etkili iletişim için ofis adresimiz, e-posta bilgilerimiz burada yer almaktadır.
+            </p>
+        </section>
+
+        <!-- Contact Grid -->
+        <section class="contact-grid">
+            <!-- Info Cards -->
+            <div class="contact-form-container" style="display: flex; flex-direction: column; justify-content: center; gap: 2rem;">
+                <div class="feature-item" style="padding: 0; align-items: center;">
+                    <div class="feature-icon" style="background: rgba(14, 165, 233, 0.1); color: #0ea5e9;"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="feature-text">
+                        <h4 style="margin-bottom: 0.2rem;">E-Posta</h4>
+                        <p style="color: #fff;">iletisim@intermundos.com.tr</p>
+                    </div>
+                </div>
+
+                <div class="feature-item" style="padding: 0; align-items: center;">
+                    <div class="feature-icon" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="feature-text">
+                        <h4 style="margin-bottom: 0.2rem;">Ofis Adresi</h4>
+                        <p style="color: #fff; line-height: 1.5;">Kınıklı Mah. Hüseyin Yılmaz Cad. NO: 67 İç Kapı No: 2<br>PAMUKKALE / DENİZLİ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container" style="display: flex; flex-direction: column; justify-content: center;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: #fff; line-height: 1.3;">Kurumsal yazılım çözümlerimizle işinizi güçlendirin.</h3>
+                <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem; font-size: 1.05rem;">
+                    Hukuki teknolojide öncü çözümlerimizi keşfedin, uzman kadromuzla iş süreçlerinizi kolaylaştırın ve dijital dönüşümde fark yaratın.
+                </p>
+                <a href="services.html" class="btn btn-primary" style="width: fit-content;">Hizmetlerimizi İnceleyin <i class="fa-solid fa-arrow-right" style="margin-left: 0.5rem;"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
