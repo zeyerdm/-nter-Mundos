@@ -539,21 +539,41 @@ body {
 }
 
 @media (max-width: 768px) {
+    .about-container {
+        gap: 2.5rem !important;
+        margin-top: 0.5rem;
+    }
+    
     .mission-vision-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .about-card {
+        padding: 1.5rem;
     }
     
     .approach-section {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1.2rem;
     }
     
     .feature-item {
         flex-direction: column;
         gap: 1rem;
+        align-items: flex-start;
     }
     
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .contact-form-container {
+        padding: 1.5rem !important;
+        gap: 1.5rem !important;
+    }
+    
+    .contact-grid {
+        gap: 2rem;
     }
 }
 
