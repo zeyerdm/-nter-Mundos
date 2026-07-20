@@ -336,11 +336,36 @@ body {
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        display: none;
+    .main-header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
     }
-    .hero-title {
-        font-size: 2.5rem;
+    
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .navbar a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .hero-title, .about-title, .section-title {
+        font-size: 2.2rem !important;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 }
 
