@@ -345,7 +345,7 @@ body {
     
     .services-grid {
         grid-template-columns: 1fr !important;
-        gap: 1.5rem;
+        gap: 2.5rem;
     }
 }
 
