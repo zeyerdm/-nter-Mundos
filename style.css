@@ -582,14 +582,3 @@ body {
     }
 }
 
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    animation: fadeUp 1.2s ease forwards;
-}
-
-.service-highlight:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-}
