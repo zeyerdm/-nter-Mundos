@@ -342,6 +342,11 @@ body {
     .hero-visual {
         height: 400px;
     }
+    
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
