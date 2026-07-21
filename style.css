@@ -22,15 +22,6 @@ body {
     line-height: 1.5;
 }
 
-/* Premium Typography for Headings */
-h1, h2, h3, h4, h5, h6, 
-.logo, 
-.hero-title, 
-.section-title, 
-.about-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-}
 
 /* Premium Matte Noise Texture */
 body::after {
