@@ -1,11 +1,11 @@
 :root {
-    --bg-primary: #060D1A;
-    --bg-secondary: #0A1428;
+    --bg-primary: #0A1931; /* More noticeable navy blue */
+    --bg-secondary: #122442; /* Lighter navy for secondary elements */
     --text-primary: #F8FAFC;
     --text-secondary: #94A3B8;
     --accent-primary: #D4AF37;
     --accent-secondary: #C5A059;
-    --border-color: rgba(212, 175, 55, 0.15);
+    --border-color: rgba(212, 175, 55, 0.2);
 }
 
 * {
@@ -65,7 +65,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 5%;
-    background: rgba(6, 13, 26, 0.8);
+    background: rgba(10, 25, 49, 0.85);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     position: sticky;
@@ -241,7 +241,7 @@ body {
 
 .abstract-card {
     position: absolute;
-    background: rgba(10, 20, 40, 0.7);
+    background: rgba(18, 36, 66, 0.7);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 1.5rem;
@@ -450,7 +450,7 @@ body {
 }
 
 .about-card {
-    background: rgba(10, 20, 40, 0.5);
+    background: rgba(18, 36, 66, 0.6);
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 2.5rem;
