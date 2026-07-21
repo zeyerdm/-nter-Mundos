@@ -46,7 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Animate only once
+            } else {
+                entry.target.classList.remove('active'); // Re-animate every time
             }
         });
     }, revealOptions);
