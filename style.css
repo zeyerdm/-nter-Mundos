@@ -109,13 +109,23 @@ body::after {
 }
 
 .logo {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    color: #fff;
-    letter-spacing: -0.5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-logo-svg {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .nav-logo-svg {
+    transform: scale(1.05);
 }
 
 .logo i {
